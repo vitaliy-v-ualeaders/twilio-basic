@@ -1,0 +1,25 @@
+<form [formGroup]="form" (ngSubmit)="connect()">
+    <label>
+        ACCESS TOKEN
+        <input type="text" formControlName="accessToken" />
+    </label>
+
+    <button type="submit">Connect</button>
+    <button type="button" (click)="disconnect()">Disconnect</button>
+</form>
+
+<div>
+    <p>localParticipant: {{room?.localParticipant?.identity}}</p>
+
+    <div id="local-media-div"></div>
+
+    <p>remoteParticipants</p>
+
+    <ul>
+        <li *ngFor="let remote of remoteParticipants">
+            {{remote.identity}}
+
+            <div [attr.data-remote-media-div]="remote.sid"></div>
+        </li>
+    </ul>
+</div>

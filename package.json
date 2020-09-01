@@ -21,13 +21,17 @@
     "@angular/router": "~10.0.14",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
+    "twilio-video": "^2.7.2",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.8",
     "@angular/cli": "~10.0.8",
     "@angular/compiler-cli": "~10.0.14",
+    "@types/events": "^3.0.0",
     "@types/node": "^12.11.1",
+    "@types/twilio-video": "^2.7.0",
+    "angular-cli-ghpages": "^0.6.2",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"

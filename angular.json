@@ -106,8 +106,13 @@
           "options": {
             "browserTarget": "twilio-basic:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "twilio-basic"
 }
